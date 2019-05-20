@@ -2,10 +2,13 @@ package main;
 
 import java.util.Scanner;
 
-public class BookShop{
+public class BookShop
+{
 	public static Item [] itemAvailable = new Item[50];	
-	public static void main(String args[]){
-        for(int i=0;i<50;i++){
+	public static void main(String args[])
+	{
+        for(int i=0;i<50;i++)
+        {
             itemAvailable[i] = new Item();
         }
 
@@ -39,11 +42,11 @@ public class BookShop{
         Scanner sc = new Scanner(System.in);
         Cart c1 = new Cart();
         take1 = sc.nextInt(); //product name
-        while(take1 != -1){
+        while(take1 != -1)
+        {
             take2 = sc.nextInt(); //quantity
             c1.updateCart(itemAvailable[take1-1], take2);
             take1 = sc.nextInt();
-            
         }
         sc.nextLine();
         System.out.println("type your name to generate the bill :");

@@ -1,22 +1,30 @@
 package main;
-public class Item{
+public class Item
+{
     public String itemName;
     public int mrp;
-    public  void addItem(String itemName,int mrpItem){
+    public  void addItem(String itemName,int mrpItem)
+    {
         //write your code here
     	//-------------------
+    	this.itemName = itemName;
+    	this.mrp = mrpItem;
 
     }
-	public String getItemName() {
+	public String getItemName() 
+	{
 		return itemName;
 	}
-	public void setItemName(String itemName) {
+	public void setItemName(String itemName) 
+	{
 		this.itemName = itemName;
 	}
-	public int getMrp() {
+	public int getMrp() 
+	{
 		return mrp;
 	}
-	public void setMrp(int mrp) {
+	public void setMrp(int mrp) 
+	{
 		this.mrp = mrp;
 	}
     
